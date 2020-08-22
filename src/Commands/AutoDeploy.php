@@ -12,6 +12,6 @@ class AutoDeploy extends Command
 
     public function handle()
     {
-
+        include('../server.php');
     }
 }

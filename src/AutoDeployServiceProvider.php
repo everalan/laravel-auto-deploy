@@ -3,6 +3,7 @@
 namespace Everalan\AutoDeploy;
 
 use Everalan\AutoDeploy\Commands\AutoDeploy;
+use Everalan\AutoDeploy\Commands\RefreshIcon;
 use Illuminate\Support\ServiceProvider;
 
 class AutoDeployServiceProvider extends ServiceProvider
@@ -15,7 +16,8 @@ class AutoDeployServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            AutoDeploy::class
+            AutoDeploy::class,
+            RefreshIcon::class
         ]);
     }
 }

@@ -16,5 +16,12 @@
         "psr-4": {
             "Everalan\\AutoDeploy\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Everalan\\AutoDeploy\\AutoDeployServiceProvider"
+            ]
+        }
     }
 }

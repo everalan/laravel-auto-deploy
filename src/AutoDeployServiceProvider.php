@@ -9,12 +9,13 @@ class AutoDeployServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->commands([
-            AutoDeploy::class
-        ]);
+
     }
 
     public function register()
     {
+        $this->commands([
+            AutoDeploy::class
+        ]);
     }
 }

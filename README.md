@@ -17,7 +17,7 @@
 ## 安装
 
 ```shell
-$ composer require everalan/api
+$ composer require everalan/laravel-auto-deploy
 ```
 ## 用法
 

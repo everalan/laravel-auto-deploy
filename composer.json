@@ -1,0 +1,20 @@
+{
+    "name": "everalan/laravel-auto-deploy",
+    "description": "自动部署 Laravel，适用于小型网站。",
+    "type": "library",
+    "require": {
+        "php": ">=7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alan",
+            "email": "everalan@everalan.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Everalan\\AutoDeploy\\": "src/"
+        }
+    }
+}

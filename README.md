@@ -28,7 +28,7 @@ $ composer require everalan/laravel-auto-deploy
 ### 通过 `git` 的 `webhook` 自动执行
 运行一个 `PHP` 进程来监听请求，执行上述代码。
 ```bash
-/usr/bin/php -S 0.0.0.0:8374 /path/to/project/vendor/everalan/laravel-auto-deploy/src/server.php
+/usr/bin/php -S 0.0.0.0:8374 /path/to/project/vendor/everalan/laravel-auto-deploy/server.php
 ```
 然后在 `github` 等添加 `webhook` 到服务器的 8374 端口。  
 #### supervisord
@@ -36,7 +36,7 @@ $ composer require everalan/laravel-auto-deploy
 ```ini
 [program:auto-deploy]
 process_name=%(program_name)s_%(process_num)02d
-command=/usr/bin/php -S 0.0.0.0:8374 /path/to/project/vendor/everalan/laravel-auto-deploy/src/server.php
+command=/usr/bin/php -S 0.0.0.0:8374 /path/to/project/vendor/everalan/laravel-auto-deploy/server.php
 autostart=true
 autorestart=true
 user=root
